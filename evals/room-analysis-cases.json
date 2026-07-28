@@ -1,0 +1,12 @@
+[
+  {"id":"clean-bedroom","file":"images/clean-bedroom.jpg","expectedOutcome":"success","checks":["bedroom classification","few grounded tasks","neutral language"]},
+  {"id":"slightly-cluttered-bedroom","file":"images/slightly-cluttered-bedroom.jpg","expectedOutcome":"success","checks":["bedroom classification","light clutter","grounded evidence"]},
+  {"id":"heavily-cluttered-bedroom","file":"images/heavily-cluttered-bedroom.jpg","expectedOutcome":"success","checks":["bedroom classification","multiple independent tasks","uncertainty notes"]},
+  {"id":"kitchen-with-dishes","file":"images/kitchen-with-dishes.jpg","expectedOutcome":"success","checks":["kitchen classification","dishes task","visible evidence"]},
+  {"id":"office-with-papers","file":"images/office-with-papers.jpg","expectedOutcome":"success","checks":["office classification","paper-organizing task","no document-content inference"]},
+  {"id":"low-light-room","file":"images/low-light-room.jpg","expectedOutcome":"success_or_unusable_image","checks":["lower confidence or controlled error","visibility uncertainty"]},
+  {"id":"blurry-room","file":"images/blurry-room.jpg","expectedOutcome":"success_or_unusable_image","checks":["lower confidence or controlled error","no invented details"]},
+  {"id":"room-containing-person","file":"images/room-containing-person.jpg","expectedOutcome":"success","checks":["no person identification","no sensitive inference","people-related uncertainty note"]},
+  {"id":"not-a-room","file":"images/not-a-room.jpg","expectedOutcome":"not_a_room","checks":["controlled NOT_A_ROOM error","no fabricated cleaning plan"]},
+  {"id":"screenshot-or-meme","file":"images/screenshot-or-meme.png","expectedOutcome":"not_a_room","checks":["controlled NOT_A_ROOM error","no fabricated cleaning plan"]}
+]
